@@ -52,42 +52,5 @@ Complete hosted rehearsals, validate private media and device recovery, and impl
 
 Commercial source, church records, credentials and existing demo recordings are excluded.
 
-## Español
-
-### 1. Descripción
-Kairos Live es una plataforma de producción para iglesias: preparación del servicio, presentaciones, proyección y coordinación de señales técnicas. La gestión de eventos y las operaciones de CRM quedan fuera de su alcance.
-
-### 2. Mi Participación
-Dirijo el proyecto y soy responsable de su dirección de producto, requisitos, integración, validación y despliegue, en colaboración con Jacob “Jake” Uzabel para el proyecto de último año. 
-
-### 3. Tecnologías
-React, Vite, TypeScript, Node.js/Express, PostgreSQL, Drizzle, contratos de API compartidos, Server-Sent Events y un control remoto con React Native/Expo. Existe configuración para Render. Las pruebas de compilación y transporte no equivalen a la aceptación de dispositivos físicos.
-
-### 4. Arquitectura
-La preparación y los controles del operador utilizan una API autorizada. El servidor conserva el estado de ejecución y entrega actualizaciones ordenadas a las vistas de proyección y control remoto. Preparar o previsualizar contenido no lo envía automáticamente a la pantalla del público.
-
-### 5. Funciones
-La implementación y la evidencia histórica de desarrollo incluyen Biblia, canciones, sermones, anuncios, medios privados, orden del servicio, controles de vista previa/en vivo y capas de presentación. Los procesos de producción incluyen revisión y aprobación por versión, asignaciones y preparación del equipo.
-
-Los indicadores de cámaras, audio e iluminación sirven para simulaciones; no demuestran control de equipos físicos. La aceptación actual del servicio completo en el entorno alojado y los adaptadores departamentales siguen pendientes o parciales.
-
-### 6. Decisiones Técnicas
-El estado persistente y las revisiones ordenadas apoyan la recuperación. La propiedad del controlador y la validación de comandos desactualizados protegen la operación. Separar la preparación del contenido cargado en vivo evita que las ediciones cambien silenciosamente un servicio en ejecución. Las vistas del público son de solo lectura.
-
-### 7. Pruebas y Confiabilidad
-El código incluye validación de comandos, conflictos de revisión, controles de autorización y recuperación del flujo de eventos. Los registros históricos describen pruebas de aislamiento, medios, reconexión y recuperación.
-
-Estas pruebas no se ejecutaron de nuevo durante la preparación del portafolio. Los ensayos autenticados actuales, los medios privados y la recuperación con varios operadores requieren aceptación independiente. No se promete sincronización perfecta ni ausencia total de fallas.
-
-### 8. Despliegue
-Existen scripts de compilación e inicio para Render y una arquitectura que sirve la aplicación web y la API desde un mismo origen, con PostgreSQL y almacenamiento privado. Esta revisión no certificó el entorno alojado actual ni publicó una versión de producción.
-
-### 9. Resultados Verificados
-Se inspeccionó un modelo completo de ejecución del servicio con estado persistente, comandos explícitos de vista previa/en vivo y entrega ordenada de actualizaciones. El registro actual distingue implementación, pruebas históricas, simulaciones y aceptación pendiente.
-
-No se afirma aceptación de integración física con cámaras, mezcladoras, iluminación o proyectores; conexión a un CRM externo real; ni avance automático seguro entre varias instancias.
-
-### 10. Próximos Pasos
-Completar ensayos alojados, validar medios privados y recuperación, y desarrollar adaptadores por departamento con pruebas independientes. Mantener las simulaciones identificadas y verificar los equipos físicos por separado.
 
 Se excluyen el código comercial, los registros de la iglesia, las credenciales y las grabaciones existentes.
